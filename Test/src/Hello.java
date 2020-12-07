@@ -72,7 +72,137 @@ public class Hello {
 			
 		}
 		
+		// Math
 		
+		
+		System.out.println(Math.max(x,y));
+		System.out.println(Math.min(x,y));
+		System.out.println(Math.sqrt(y));
+		System.out.println(Math.abs(-4.7));
+		System.out.println(Math.random());
+		int randomNum = (int)(Math.random() * 50); 
+		System.out.println(randomNum);
+		
+		// Switch
+		
+		int day = 1 + 2; //outputs case 3
+		switch (day) {
+		case 1: 
+			System.out.println("Monday");
+			break;
+		case 2: 
+			System.out.println("Tuesday");
+			break;
+		case 3: 
+			System.out.println("Wensday");
+			break;
+		case 4: 
+			System.out.println("Thursday");
+			break;
+		case 5: 
+			System.out.println("Friday");
+			break;
+		case 6: 
+			System.out.println("Saturday");
+			break;
+		case 7: 
+			System.out.println("Sunday");
+			break;
+		}
+		
+		// Switch no value
+		
+		int noValue = 0; //outputs default statement
+		switch (noValue) {
+		case 1: 
+			System.out.println("Monday");
+			break;
+		case 2: 
+			System.out.println("Tuesday");
+			break;
+		case 3: 
+			System.out.println("Wensday");
+			break;
+		case 4: 
+			System.out.println("Thursday");
+			break;
+		case 5: 
+			System.out.println("Friday");
+			break;
+		case 6: 
+			System.out.println("Saturday");
+			break;
+		case 7: 
+			System.out.println("Sunday");
+			break;
+		default:
+			System.out.println("I wish it was friday");
+		}
+		
+		// While loop
+		
+		int i = 1;
+		 while (i < 5) {
+		 System.out.println(i);
+		 i++;
+		 }
+		
+		// Do While
+		
+		 int b = 0;
+		 do {
+		  System.out.println(b);
+		  b++;
+		 }
+		 while (b < 5);
+		 
+		 // For Loop
+		
+		 for (int d = 0; d < 5; d = d + 2) {
+			 System.out.println(d);
+		 }
+		 
+		 // For-Each Loop
+		 
+		 String[] cars = {"Volvo", "BMW", "Subaru", "Chevrolet"};
+		 for(String f : cars) {
+			 System.out.println(f);
+		 }
+		 
+		 // Break
+		 
+		 int k = 0;
+		 while (k < 10) {
+		   System.out.println(k);
+		   k++;
+		   if (k == 4) {
+		     break;
+		   }
+		 }
+		 
+		 //Continue
+		 int h = 0;
+		 while (h < 10) {
+		   if (h == 4) {
+		     h++;
+		     continue;
+		   }
+		   System.out.println(h);
+		   h++;
+		 }
+		 
+		 // Array Looping
+		 
+		 String[] food = {"Pizza", "Burger", "Milk", "Pasta"};
+		 for (int fd = 0; fd < food.length; fd++) {
+			 System.out.println(food[fd]);
+		 }
+		 
+		 //More than one array
+		 
+		int[][] myNumb = { {1,2,3,4}, {5,6,7,8} };
+		int xx = myNumb[1][1]; // first [] is the array second [] is the value
+		System.out.println(xx);
 	}
 	
 }
